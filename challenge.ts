@@ -1,5 +1,5 @@
 // challenge.ts
-// console.log("toto01");
+console.log("toto01");
 
 interface User {
 	name: string;
@@ -7,17 +7,17 @@ interface User {
     birthday?: string; // ? optional type
 }
 
-const prettyPrintWilder = (users: User[]) => {
+const prettyPrintWilder = (users: User[]) => { // arrowfunction
     // console.log('toto02', users);
     users.map((user:User) => {
-        // console.log('bibi',user);
+        console.log('bibi',user);
 		user.name
         user.age 
         user.birthday
         console.log(`${user.name} is ${user.age} years old and was born on ${user.birthday}`);
 	}); 
 };
-// console.log('toto03');
+console.log('toto03');
 
 const wilders: User[] = [];
 
